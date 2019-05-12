@@ -1,0 +1,6 @@
+framework module Pods_SpacePics {
+  umbrella header "Pods-SpacePics-umbrella.h"
+
+  export *
+  module * { export * }
+}
