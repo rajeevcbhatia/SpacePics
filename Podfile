@@ -2,20 +2,17 @@
 # platform :ios, '9.0'
 
 target 'SpacePics' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  
   use_frameworks!
   pod 'SDWebImage'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  
+end
 
-  # Pods for SpacePics
+target 'SpacePicsTests' do
+  inherit! :search_paths
+end
 
-  target 'SpacePicsTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SpacePicsUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target 'SpacePicsUITests' do
+  inherit! :search_paths
 end

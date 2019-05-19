@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="SpacePics" customModuleProvider="target">
+            <connections>
+                <outlet property="searchButton" destination="tDL-4s-Z5A" id="lN1-HC-Kvi"/>
+                <outlet property="searchTextField" destination="fmg-6z-XM2" id="vuy-BP-vNW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startBG" translatesAutoresizingMaskIntoConstraints="NO" id="RzF-u3-krO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter search term" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-6z-XM2">
+                    <rect key="frame" x="48" y="153" width="279" height="38"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDL-4s-Z5A">
+                    <rect key="frame" x="48" y="319.5" width="279" height="48"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="aLa-G6-SmA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <state key="normal" title="Launch!"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RzF-u3-krO" secondAttribute="trailing" id="01a-R4-QUH"/>
+                <constraint firstAttribute="top" secondItem="RzF-u3-krO" secondAttribute="top" id="0gO-SH-LIH"/>
+                <constraint firstItem="fmg-6z-XM2" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.5" id="OTI-Qa-VoG"/>
+                <constraint firstItem="tDL-4s-Z5A" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="a3a-Vc-V62"/>
+                <constraint firstItem="tDL-4s-Z5A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="g92-wU-58z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tDL-4s-Z5A" secondAttribute="trailing" constant="48" id="gkM-HS-km5"/>
+                <constraint firstItem="fmg-6z-XM2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="hhm-jE-8hU"/>
+                <constraint firstAttribute="bottom" secondItem="RzF-u3-krO" secondAttribute="bottom" id="jVY-4H-J5g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fmg-6z-XM2" secondAttribute="trailing" constant="48" id="r8I-o1-ZYb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="RzF-u3-krO" secondAttribute="leading" id="tIT-f0-yAr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="startBG" width="469" height="834"/>
+    </resources>
+</document>
